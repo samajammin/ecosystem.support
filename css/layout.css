@@ -1,7 +1,7 @@
 /* Section */
 .section {
   position: relative;
-  padding: 0 80px 60px 80px;
+  padding: 0 80px 60px 0px;
   z-index: 97;
   opacity: 1;
   visibility: visible;
@@ -75,13 +75,15 @@
   position: relative;
 }
 
-.section.started .started-content .image .horz-logo {
+.image .horz-logo {
   width: 450px;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+  padding-top: 30px;
 }
 
-.section.started .started-content .image .vert-logo {
+.image .vert-logo {
   display: none;
 }
 
@@ -113,23 +115,26 @@
     padding: 0 20px;
   }
 
-  .section.started .started-content .image .horz-logo {
+  .image .horz-logo {
     width: 380px;
   }
 
 }
 
 @media (max-width: 480px) {
-  .section.started .started-content .image .horz-logo {
+  .image .horz-logo {
     display: none;
   }
   
-  .section.started .started-content .image .vert-logo {
+  .image .vert-logo {
     width: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+  .section.started .btn {
+    margin: 30px 0 0 ;
+  } 
 
   .section.started .started-content .btn {
     margin: 30px 0 0 0;
@@ -171,6 +176,10 @@
   .section.overview .content h3 {
     font-size: 20px;
   }
+}
+
+#apply-btn {
+  text-align: center;
 }
 
 /* Focus */
