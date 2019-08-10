@@ -161,11 +161,12 @@
 }
 
 .section.overview .content .desc {
-  font-size: 24px;
+  font-size: 22px;
   font-family: 'Work Sans', sans-serif;
   color: #141414;
   font-weight: 350;
   letter-spacing: 0.04em;
+  line-height: 1.5em;
   margin: 10px 0 0 0;
 }
 
