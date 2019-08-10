@@ -181,6 +181,7 @@
 
 #apply-btn {
   text-align: center;
+  margin-bottom: 5%;
 }
 
 /* Focus */
@@ -214,13 +215,6 @@
   margin: 10px 0 0 0;
 }
 
-@media (max-width: 760px) {
-  .section.focus .content .a-title {
-    font-size: 28px;
-  }
-
-}
-
 @media (max-width: 660px) {
   .section.focus .image img {
     width: 130px;
@@ -230,6 +224,15 @@
     font-size: 30px;
   }
 }
+
+@media (max-width: 760px) {
+  .section.focus .content .a-title {
+    font-size: 28px;
+  }
+
+}
+
+
 
 /* Contacts */
 @media (max-width: 400px) {
