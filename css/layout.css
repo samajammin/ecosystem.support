@@ -280,6 +280,11 @@ nav {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 10px rgba(0, 0, 0, 0.14);
 }
 
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+}
+
 nav a {
   font-size: 18px;
   padding-right: 15px;
@@ -304,13 +309,20 @@ nav a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-nav a:hover:after {
+.nav-links a:hover:after {
   width: 100%;
   left: 0;
 }
 
 .nav-logo {
   width: 45px;
+  margin-right: 5px;
+}
+
+@media (max-width: 840px) {
+  .nav-logo-text {
+    display: none;
+  }
 }
 
 /* Footer */

@@ -35,8 +35,7 @@ $(function() {
 
   /* Hide mouse button on scroll */
   $(window).scroll(function() {
-    console.log($(this).scrollTop());
-    if ($(this).scrollTop() >= 1 /*$('#blue_bor').offset().top*/) {
+    if ($(this).scrollTop() >= 10 /*$('#blue_bor').offset().top*/) {
       $("nav").addClass("nav-shadow");
       $(".mouse_btn").fadeOut();
     } else {
