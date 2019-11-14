@@ -12,21 +12,23 @@
 }
 
 #section-overview {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+.section-overview {
+  padding-bottom: 16px;
 }
 
 @media (max-width: 960px) {
   .section {
     padding: 0 40px 50px 40px;
   }
-
 }
 
 @media (max-width: 480px) {
   .section {
     padding: 0 20px 40px 20px;
   }
-
 }
 
 .section .content {
@@ -42,7 +44,6 @@
   .section .content .title {
     text-align: center;
   }
-
 }
 
 .section .content .title .title_inner {
@@ -71,6 +72,8 @@
   padding: 0;
   margin: 0;
   position: relative;
+  /* TODO find better option */
+  margin-top: -70px;
 }
 
 .section.started .started-content {
@@ -122,14 +125,13 @@
   .image .horz-logo {
     width: 380px;
   }
-
 }
 
 @media (max-width: 480px) {
   .image .horz-logo {
     display: none;
   }
-  
+
   .image .vert-logo {
     width: 250px;
     display: block;
@@ -137,17 +139,16 @@
     margin-right: auto;
   }
   .section.started .btn {
-    margin: 30px 0 0 ;
-  } 
+    margin: 30px 0 0;
+  }
 
   .section.started .started-content .btn {
     margin: 30px 0 0 0;
-  } 
+  }
 
   .section.started .mouse_btn .ion {
     margin-top: 30px;
   }
-
 }
 
 /* Overview */
@@ -166,7 +167,7 @@
 
 .section.overview .content .desc {
   font-size: 22px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #141414;
   font-weight: 350;
   letter-spacing: 0.04em;
@@ -212,7 +213,7 @@
 
 .section.focus .content .a-title {
   font-size: 30px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #141414;
   font-weight: 500;
   letter-spacing: 0.01em;
@@ -233,17 +234,13 @@
   .section.focus .content .a-title {
     font-size: 28px;
   }
-
 }
-
-
 
 /* Contacts */
 @media (max-width: 400px) {
   .section.contacts {
     text-align: left;
   }
-
 }
 
 .section.contacts .service-items .service-item p {
@@ -261,6 +258,47 @@
 .section.contacts .alert-success p {
   margin: 60px 0 30px 0;
   font-size: 15px;
+}
+
+/* Navbar */
+
+nav {
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  font-size: 18px;
+  padding-right: 15px;
+}
+
+nav a {
+  /* color: #fff; */
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /* letter-spacing: 0.15em; */
+
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 15px;
+  position: relative;
+}
+nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #f26b38;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+nav a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 /* Footer */
@@ -284,7 +322,6 @@ footer {
   footer {
     bottom: 15px;
   }
-
 }
 
 footer .soc {
@@ -319,7 +356,6 @@ footer .soc a:hover .ion {
   footer .soc a {
     margin: 0 6px;
   }
-
 }
 
 footer .copy {
@@ -333,7 +369,6 @@ footer .copy {
   footer .copy {
     display: none;
   }
-
 }
 
 .mfp-fade.mfp-bg {
@@ -374,14 +409,29 @@ footer .copy {
 }
 
 .mfp-close {
-  width: 54px!important;
-  height: 54px!important;
+  width: 54px !important;
+  height: 54px !important;
   background: #ffffff !important;
-  line-height: 54px!important;
-  opacity: 1!important;
+  line-height: 54px !important;
+  opacity: 1 !important;
   font-weight: 300;
   color: #ffffff;
   font-size: 24px;
-  font-family: 'Verdana' !important;
+  font-family: "Verdana" !important;
 }
 
+.process-img {
+  width: 100%;
+  padding: 40px;
+}
+
+/* FAQ page */
+.question {
+  padding-top: 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.helpful-links {
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
