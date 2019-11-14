@@ -341,9 +341,9 @@ footer {
   -o-transition: all 0.6s ease 0s;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 480px) {
   footer {
-    bottom: 15px;
+    padding: 15px;
   }
 }
 
@@ -372,8 +372,9 @@ footer .soc a:hover .ion {
 
 @media (max-width: 840px) {
   footer .soc {
-    float: none;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   footer .soc a {
@@ -382,8 +383,6 @@ footer .soc a:hover .ion {
 }
 
 footer .copy {
-  float: left;
-  padding-top: 2px;
   font-size: 11px;
   color: #999999;
   transition: all 0.3s ease 0s;
@@ -394,6 +393,10 @@ footer .copy {
 
 footer .copy:hover {
   color: #f26b38 !important;
+}
+
+footer .footer-legal:hover {
+  color: #999999 !important;
 }
 
 @media (max-width: 840px) {
