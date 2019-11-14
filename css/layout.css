@@ -420,9 +420,21 @@ footer .copy {
   font-family: "Verdana" !important;
 }
 
+.process-img-container {
+  display: flex;
+  justify-content: center;
+}
+
 .process-img {
-  width: 100%;
+  max-width: 600px;
   padding: 40px;
+}
+
+@media (max-width: 480px) {
+  .process-img {
+    max-width: 100%;
+    padding: 10px 0;
+  }
 }
 
 /* FAQ page */
