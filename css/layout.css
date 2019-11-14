@@ -87,7 +87,6 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
-  padding-top: 30px;
 }
 
 .image .vert-logo {
@@ -263,10 +262,22 @@
 /* Navbar */
 
 nav {
-  padding: 15px;
+  position: fixed;
+  background: #ffffff;
+  width: 100%;
+  z-index: 100;
+  padding: 15px 60px 5px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.nav-shadow {
+  transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 10px rgba(0, 0, 0, 0.14);
 }
 
 nav a {
@@ -275,13 +286,9 @@ nav a {
 }
 
 nav a {
-  /* color: #fff; */
-  /* text-transform: uppercase; */
   text-decoration: none;
-  /* letter-spacing: 0.15em; */
-
   display: inline-block;
-  padding: 10px 0;
+  padding: 0 0 10px 0;
   margin-right: 15px;
   position: relative;
 }
@@ -311,7 +318,7 @@ footer {
   position: fixed;
   bottom: 25px;
   left: 0;
-  padding: 15px 60px 30px 60px;
+  padding: 15px 60px 20px;
   width: 100%;
   background: #ffffff;
   z-index: 100;
